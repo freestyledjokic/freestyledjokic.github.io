@@ -3,30 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Andrej Djokic's Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <style>
-        /* Optional: Add some simple styling */
-        img {
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2, p, a {
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 36px;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .image-container {
             float: left;
-            margin-right: 10px;
+            margin-right: 20px;
+            width: 450px; /* Adjust size as needed */
+        }
+        img {
+            width: 100%; /* Adjust size as needed */
+            border-radius: 8px; /* Adds rounded corners to your image */
+            margin-bottom: 10px;
+        }
+        figcaption {
+            text-align: center; /* Center-aligns the text of the caption */
+        }
+        .clear {
+            clear: both;
+        }
+        .link {
+            font-size: 20px;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .unique-fact {
+            font-style: italic;
+            color: #8e44ad;
         }
     </style>
 </head>
 <body>
-    <h1>Your First Name and Last Initial</h1>
-    <h2>Your Major</h2>
-    <p>Your IP address: (You can use <a href="https://whatismyipaddress.com/" target="_blank">this website</a> to get your IP address.)</p>
-    <p>Location where you grew up: City, Country</p>
-    
-    <!-- Image and text wrapping around it 
-    <img src="path-to-your-image.jpg" alt="Favorite Place" width="150">
-    <p>
-        This is a picture of my favorite place. It's my favorite because...
-        Write your description here. The text should wrap to the right of the image. 
+    <h1>Andrej Djokic</h1>
+    <h2>Major: Computer Science</h2>
+    <p>My IPv4 Address: 71.232.12.6</p>
+    <p>Location I grew up in: 
+        <a href="https://www.google.com/maps/place/Br%C4%8Dko,+Bosnia+and+Herzegovina/@44.8685291,18.7812665,14z/data=!3m1!4b1!4m6!3m5!1s0x475c0ea7a036d835:0x758d010f9836f04b!8m2!3d44.8726563!4d18.8106276!16zL20vMDhucWRx?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="link">Brčko, Bosnia and Herzegovina</a>
     </p>
-   -->
-    
-    <p><a href="https://www.yourfaverestaurant.com" target="_blank">My Favorite Restaurant</a></p>
-    <p>Something no one would expect about me: [Add a surprising fact]</p>
+    <div class="image-container">
+        <img src="sol.jpg" alt="Favourite Place">
+        <figcaption>Tennis Club "SOL"</figcaption>
+    </div>
+    <p>
+        This place holds a special place in my heart, as it taught me vital 
+        skills that have shaped me into a better person and contributed 
+        significantly to my achievements. It is the tennis club SOL, where I have spent
+        countless hours playing tennis — a sport that has not only improved my physical
+        fitness but also instilled in me values such as discipline, perseverance, and
+        teamwork. These qualities have proven invaluable in all areas of my life.
+    </p>
+    <div class="clear"></div>
+    <p>
+        This is my favourite restaurant: 
+        <a href="https://bakarnilonac.com/" target="_blank" class="link">Bakarni Lonac</a>
+    </p>
+    <p class="unique-fact">Fun fact: I can string tennis rackets! Really really fast!</p>
 </body>
 </html>
