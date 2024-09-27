@@ -1,10 +1,18 @@
+        
+        * {
+                box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+            }
+            
         /* BODY STYLESHEET */
-        body {
+        body, html {
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
                 background-color: #f8f8f8;
+                width: 100%;
+                overflow-x: hidden; 
+                max-width: 100%;
         }
 
         /* SHOWING VERTICAL SIDEBAR */
@@ -18,7 +26,6 @@
                 color: white;
                 position: relative;
                 height: 250px; 
-                
         }
         
         /* BACKGROUND HEADER THAT HAS ICONS INSIDE */
@@ -378,6 +385,7 @@
 }
 
 .form-row {
+        flex-direction: column; 
         margin-bottom: 20px;
 }
 
@@ -425,10 +433,15 @@ button:hover {
         color: #e67e22;
         background-color: #ece6e0;
 }
-            
+     
+
+
 @media only screen and (max-width: 768px) {
+        .element {
+            padding: 0 10px;
+        }
         body {
-            background-color: #fafafa;
+                background-color: #fafafa;
         }
     
         header {
@@ -502,5 +515,5 @@ button:hover {
         .footer a {
             margin: 5px;
         }
-    }
+}
     
