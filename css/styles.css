@@ -260,7 +260,7 @@
         /* CONTACT SECTION ON HOME PAGE */
         .contact-section {
                 background: linear-gradient(to bottom, #ea6a15, #494949);
-                padding: 40px 0;
+                padding: 60px 0;
                 text-align: center;
         }    
         .contact-section .container {
@@ -307,22 +307,15 @@
 
         /* FOOTER CSS STYLESHEET */
         .footer {
+                position: fixed;
+                bottom: 0;
                 background-color: #333;
                 color: white;
-                padding: 20px 0;
                 text-align: center;
-        }
-        .footer .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-        }
-        .footer .footer-links {
-                margin-bottom: 10px;
-        }   
+                font-size: 12px; 
+                width: 100%;
+                z-index: 1000; 
+        }  
         .footer a {
                 color: rgb(255, 255, 255);
                 text-decoration: none;
@@ -512,8 +505,8 @@ button:hover {
             flex-direction: column;
         }
     
-        .footer a {
-            margin: 5px;
+        .footer {
+                font-size: 12px;      /* Ensure the text remains readable on smaller devices */
         }
 }
     
